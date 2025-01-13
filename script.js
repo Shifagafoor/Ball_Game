@@ -17,7 +17,7 @@ function moveBallToContainer(ball) {
     for (let container of containers) {
         if (container.children.length < 10) {
             container.appendChild(ball);
-            ball.style.display = 'block'; // Make sure the ball is visible in the container
+            // ball.style.display = 'block'; 
             break;
         }
     }

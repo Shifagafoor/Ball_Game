@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SUSE", system-ui;
   }
   
   body {
@@ -25,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   .container {
