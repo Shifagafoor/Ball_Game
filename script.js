@@ -9,15 +9,23 @@ balls.forEach(ball => {
 });
 
 let selectedBall = null;
-
 containers.forEach(container => {
     container.addEventListener('click', () => {
         if (selectedBall) {
             container.insertBefore(selectedBall, container.firstChild);
             selectedBall = null;
         }else{
-            betweenContainers(container);
+            let cont = container.firstChild;
+
+            containers.forEach((jar) => {
+                jar.addEventListener('click', () => {
+                    if (cont) {
+                        const node = cont.cloneNode(true);
+                        jar.appendChild(node); 
+                    }
+                });
+                console.log(jar);
+            })
         }
     });
 });
- 
