@@ -18,9 +18,13 @@ containers.forEach(container => {
             let cont = container.firstChild;
 
             containers.forEach((jar) => {
+                
                 jar.addEventListener('click' , () => {
-                    jar.appendChild(cont)
-                    cont = ''
+                    if (cont && cont instanceof Node) {
+
+                        jar.appendChild(cont)
+                        cont = null;
+                    }    
                 })
                 console.log(jar)
             })
