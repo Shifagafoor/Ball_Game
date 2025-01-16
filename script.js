@@ -1,32 +1,32 @@
-const balls = document.querySelectorAll('.number');
+const balls = document.querySelectorAll('.numbers');
 const containers = document.querySelectorAll('.container');
 
 let selectedContainer = null;
 let selectedBall = null;
 
 containers.forEach(container => {
-    container.addEventListener('click', () => {
-        selectedContainer = container;
-        console.log('Selected container:', selectedContainer);
+    container.addEventListener('click' , () => {
+        selectedContainer =container;
+
+        console.log(selectedContainer)
     });
 });
 
 balls.forEach(ball => {
-    ball.addEventListener('click', () => {
+    balls.addEventListener('click', () => {
         if (selectedContainer) {
             selectedContainer.appendChild(ball);
-            selectedContainer = null; 
+            selectedContainer = null;
         } else {
-            selectedBall = ball; 
+            selectedBall = ball;
         }
     });
 });
-
 containers.forEach(container => {
-    container.addEventListener('click', () => {
-        if (selectedBall) {
+    container.addEventListener('click' , () => {
+        if(selectedBall) {
             container.appendChild(selectedBall);
-            selectedBall = null; 
+            selectedBall = null;
         }
     });
 });
