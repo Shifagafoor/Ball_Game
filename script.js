@@ -18,13 +18,11 @@ containers.forEach(container => {
             let cont = container.firstChild;
 
             containers.forEach((jar) => {
-                jar.addEventListener('click', () => {
-                    if (cont) {
-                        const node = cont.cloneNode(true);
-                        jar.appendChild(node); 
-                    }
-                });
-                console.log(jar);
+                jar.addEventListener('click' , () => {
+                    jar.appendChild(cont)
+                    cont = ''
+                })
+                console.log(jar)
             })
         }
     });
