@@ -3,13 +3,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   body {
     overflow: hidden;
-    /* background-image: url(img/217345444-H-1024x700.webp); */
     background-position: center;
   }
+
+  h1 {
+    font-size: 50px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 70px;
+  }
+  
+  .btn {
+    border: 0;
+    background-color: #fff;
+    color: black;
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+    
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .btn:focus {
+    outline: 0;
+  }
+
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  position: absolute;
+  z-index: 1;
+  background-color: #ec9d8f;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
 
   .ball_game{
     min-width: 1050px;
