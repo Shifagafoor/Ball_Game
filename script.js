@@ -14,7 +14,7 @@ let selectedBall = null;
 containers.forEach(container => {
     container.addEventListener('click', () => {
         selectedContainer = container;
-        console.log('Selected container:', selectedContainer);
+        // console.log('Selected container:', selectedContainer);
     });
 });
 
