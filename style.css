@@ -25,7 +25,7 @@
     padding: 15px 20px;
     font-family: inherit;
     cursor: pointer;
-    
+    color:  #7CA982;
   }
   
   .btn:hover {
@@ -35,6 +35,7 @@
   .btn:focus {
     outline: 0;
   }
+
 
 .screen {
   display: flex;
