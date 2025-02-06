@@ -53,6 +53,38 @@
 .screen.up {
   margin-top: -100vh;
 }
+.restart-btn-container{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.restart-btn{
+  background: linear-gradient(45deg, #4a8852,#7CA982);
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid rgb(197, 197, 197);
+  box-shadow: 0 0 4px #7CA982, 
+  0 0 4px rgba(242, 230, 238, 0.1), 
+  0 0 4px rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.restart-btn:hover{
+  opacity: 0.8;
+}
+.restart-btn:active{
+  transform: scale(0.95);
+}
+.restart-btn i {
+  font-size: 14px;
+  font-weight: bold;
+}
 
   .ball_game{
     min-width: 1050px;
